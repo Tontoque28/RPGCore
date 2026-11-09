@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "rpgcore",
+  "version": "${version}",
+  "name": "RPG Core",
+  "description": "RPG progression core: life management, Empty Hearts, ghost mode, Lost Souls, Soul Campfire rituals, world debuffs, configurable boss rewards, and an in-game guide book for survival flow.",
+  "authors": [
+    "Tontoque28"
+  ],
+  "license": "All Rights Reserved",
+  "icon": "assets/rpgcore/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.tontoque28.rpgcore.RpgCore"
+    ],
+    "client": [
+      "com.tontoque28.rpgcore.client.RpgCoreClient"
+    ]
+  },
+  "mixins": [
+    "rpgcore.mixins.json",
+    {
+      "config": "rpgcore.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "ftbteams": ">=2001.3",
+    "gamestages": ">=15.0"
+  }
+}

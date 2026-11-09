@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.tontoque28.rpgcore.client.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "GuiGhostMixin",
+    "PlayerRendererGhostMixin",
+    "HandRenderGhostMixin",
+    "EntityRendererAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
