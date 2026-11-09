@@ -1,0 +1,14 @@
+{
+  "itemGroup.rpgcore": "RPGCore",
+  "item.rpgcore.life_heart": "Empty Heart",
+  "item.rpgcore.guide_book": "RPGCore Book",
+  "item.rpgcore.spiritual_vessel": "Spiritual Vessel",
+  "tooltip.rpgcore.life_heart_add": "Adds one empty heart.",
+  "tooltip.rpgcore.life_heart_no_heal": "It does not restore current health.",
+  "tooltip.rpgcore.soul_bound": "Soul of %s",
+  "tooltip.rpgcore.soul_empty": "Empty",
+  "message.rpgcore.life_heart_ghost": "A ghost cannot consume a Life Heart.",
+  "message.rpgcore.life_heart_consumed": "Heart +1",
+  "message.rpgcore.soul_attracted": "You have attracted the soul of %s through the flames.",
+  "message.rpgcore.no_souls": "There are no lost souls in this world."
+}
