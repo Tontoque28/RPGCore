@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "I I",
+    " B "
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "B": "minecraft:book"
+  },
+  "result": {
+    "id": "rpgcore:guide_book",
+    "count": 1
+  }
+}
