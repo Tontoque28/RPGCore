@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    "T T",
+    "TST"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:spruce_button"
+    },
+    "T": {
+      "item": "minecraft:terracotta"
+    },
+    "S": {
+      "item": "minecraft:soul_sand"
+    }
+  },
+  "result": {
+    "id": "rpgcore:spiritual_vessel",
+    "count": 1
+  }
+}

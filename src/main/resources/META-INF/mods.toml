@@ -1,0 +1,39 @@
+modLoader="javafml"
+loaderVersion="[52,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="rpgcore"
+version="1.0.2"
+displayName="RPG Core"
+logoFile="rpgcore_logo.png"
+authors="Tontoque28"
+description='''RPG progression core for Forge 1.21.1: life management, Empty Hearts, ghost mode, Lost Souls, Soul Campfire rituals, world debuffs, configurable boss rewards, and an in-game guide book for survival flow.'''
+
+[[dependencies.rpgcore]]
+    modId="forge"
+    mandatory=true
+    versionRange="[52,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.rpgcore]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.1,1.22)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.rpgcore]]
+    modId="ftbteams"
+    mandatory=false
+    versionRange="[2001.3,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.rpgcore]]
+    modId="gamestages"
+    mandatory=false
+    versionRange="[15.0,)"
+    ordering="AFTER"
+    side="BOTH"

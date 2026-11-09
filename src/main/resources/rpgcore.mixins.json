@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.tontoque28.rpgcore.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "SpectatorVisibilityMixin"
+  ],
+  "client": [
+    "GuiMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
