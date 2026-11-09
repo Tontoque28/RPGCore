@@ -1,0 +1,47 @@
+package com.tontoque28.rpgcore.capability;
+
+import net.minecraft.core.Direction;
+import net.minecraft.core.HolderLookup;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.capabilities.CapabilityManager;
+import net.minecraftforge.common.capabilities.CapabilityToken;
+import net.minecraftforge.common.capabilities.ICapabilitySerializable;
+import net.minecraftforge.common.util.LazyOptional;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+public class PlayerLivesProvider implements ICapabilitySerializable<CompoundTag> {
+
+    public static final Capability<PlayerLives> PLAYER_LIVES = CapabilityManager.get(new CapabilityToken<PlayerLives>() { });
+
+    private PlayerLives lives = null;
+    private final LazyOptional<PlayerLives> optional = LazyOptional.of(this::createPlayerLives);
+
+    private PlayerLives createPlayerLives() {
+        if (this.lives == null) {
+            this.lives = new PlayerLives();
+        }
+        return this.lives;
+    }
+
+    @Override
+    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
+        if (cap == PLAYER_LIVES) {
+            return optional.cast();
+        }
+        return LazyOptional.empty();
+    }
+
+    @Override
+    public CompoundTag serializeNBT(HolderLookup.Provider registryAccess) {
+        CompoundTag nbt = new CompoundTag();
+        createPlayerLives().saveNBTData(nbt);
+        return nbt;
+    }
+
+    @Override
+    public void deserializeNBT(HolderLookup.Provider registryAccess, CompoundTag nbt) {
+        createPlayerLives().loadNBTData(nbt);
+    }
+}
