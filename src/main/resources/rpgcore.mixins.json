@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.tontoque28.rpgcore.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "EntityPersistentDataMixin",
+    "SpectatorVisibilityMixin",
+    "MobTargetMixin",
+    "ItemEntityPickupMixin",
+    "ServerPlayerLanguageMixin",
+    "ServerPlayerGhostDamageMixin",
+    "ClientInformationPacketAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

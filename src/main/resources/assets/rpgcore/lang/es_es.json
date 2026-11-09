@@ -1,0 +1,15 @@
+{
+  "itemGroup.rpgcore": "RPGCore",
+  "itemGroup.rpgcore.rpgcore_tab": "RPGCore",
+  "item.rpgcore.life_heart": "Corazón Vacío",
+  "item.rpgcore.guide_book": "RPGCore Book",
+  "item.rpgcore.spiritual_vessel": "Vasija Espiritual",
+  "tooltip.rpgcore.life_heart_add": "Añade un corazón vacío.",
+  "tooltip.rpgcore.life_heart_no_heal": "No restaura la salud actual.",
+  "tooltip.rpgcore.soul_bound": "Alma de %s",
+  "tooltip.rpgcore.soul_empty": "Vacía",
+  "message.rpgcore.life_heart_ghost": "Un fantasma no puede consumir un Corazón de Vida.",
+  "message.rpgcore.life_heart_consumed": "Corazón +1",
+  "message.rpgcore.soul_attracted": "Has atraído el alma de %s a través de las llamas.",
+  "message.rpgcore.no_souls": "No hay almas perdidas en este mundo."
+}
