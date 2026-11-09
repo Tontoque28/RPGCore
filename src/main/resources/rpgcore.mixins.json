@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.tontoque28.rpgcore.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "SpectatorVisibilityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
