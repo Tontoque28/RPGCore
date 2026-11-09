@@ -1,0 +1,11 @@
+[
+  {
+    "modid": "rpgcore",
+    "name": "RPG Core",
+    "description": "RPG progression core for Forge 1.12.2: life management, Empty Hearts, ghost mode, Lost Souls, soul rituals, world debuffs, configurable boss rewards, and an in-game guide book for survival flow.",
+    "version": "1.0.2",
+    "mcversion": "1.12.2",
+    "authorList": ["Tontoque28"],
+    "logoFile": "rpgcore_logo.png"
+  }
+]
